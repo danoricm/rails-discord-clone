@@ -1,0 +1,8 @@
+<!-- app/views/servers/index.html.erb -->
+
+<h1>Servers</h1>
+<ul>
+  <% @servers.each do |server| %>
+    <li><%= link_to server.name, server_path(server) %></li>
+  <% end %>
+</ul>

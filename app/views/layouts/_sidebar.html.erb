@@ -1,0 +1,15 @@
+<div class="dropdown">
+  <% if current_user %>
+    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="<%= current_user.avatar_url %>" alt="" width="32" height="32" class="rounded-circle me-2">
+      <strong><%= current_user.username %></strong>
+    </a>
+    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+      <!-- Add dropdown items here -->
+    </ul>
+  <% else %>
+    <a href="<%= new_user_session_path %>" class="d-flex align-items-center link-dark text-decoration-none">
+      <strong>Login</strong>
+    </a>
+  <% end %>
+</div>
