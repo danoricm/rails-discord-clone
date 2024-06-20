@@ -1,0 +1,13 @@
+current directory: /home/dddyo/Github/rails-discord-clone/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+/home/dddyo/.rbenv/versions/3.0.6/bin/ruby -I /home/dddyo/.rbenv/versions/3.0.6/lib/ruby/3.0.0 -r ./siteconf20240620-853731-cb6hwk.rb extconf.rb
+creating Makefile
+
+current directory: /home/dddyo/Github/rails-discord-clone/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+make DESTDIR\= clean
+
+current directory: /home/dddyo/Github/rails-discord-clone/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: /home/dddyo/Github/rails-discord-clone/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+make DESTDIR\= install

@@ -1,0 +1,27 @@
+// app/assets/stylesheets/application.scss
+
+// Example of using Sass variables
+$primary-color: #333;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $primary-color;
+
+  // Example of nesting
+  .header {
+    background: lighten($primary-color, 20%);
+    padding: 10px;
+
+    .nav {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
