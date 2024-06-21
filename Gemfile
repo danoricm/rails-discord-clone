@@ -32,8 +32,13 @@ gem 'pg'
 #json
 gem 'json'
 
-#sass
-gem 'sassc-rails'
+#sass and bootstarp
+gem 'bootstrap', '~> 5.1.0'
+gem 'sassc-rails', '>= 2.1.0'
+
+#account auth 
+gem 'devise'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
