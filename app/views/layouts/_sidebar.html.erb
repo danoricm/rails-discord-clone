@@ -1,15 +1,27 @@
-<div class="dropdown">
-  <% if current_user %>
-    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="<%= current_user.avatar_url %>" alt="" width="32" height="32" class="rounded-circle me-2">
-      <strong><%= current_user.username %></strong>
+<!-- app/views/layouts/_sidebar.html.erb -->
+<div class="sidebar">
+  <!-- Message Icon -->
+  <div class="sidebar-item">
+    <a href="#">
+      <i class="fa fa-envelope message-icon"></i>
     </a>
-    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-      <!-- Add dropdown items here -->
-    </ul>
-  <% else %>
-    <a href="<%= new_user_session_path %>" class="d-flex align-items-center link-dark text-decoration-none">
-      <strong>Login</strong>
+  </div>
+  <hr>
+
+  <!-- Servers List -->
+  <div class="servers-list">
+    <% @servers.each do |server| %>
+      <div class="server-item">
+        <a href="#"><%= server.name %></a>
+      </div>
+    <% end %>
+  </div>
+  <hr>
+
+  <!-- Create Server Option -->
+  <div class="sidebar-item create-server">
+    <a href="#">
+      <i class="fa fa-plus create-server-icon"></i>
     </a>
-  <% end %>
+  </div>
 </div>

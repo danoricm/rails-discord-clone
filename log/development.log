@@ -135,3 +135,15 @@ Processing by ServersController#index as HTML
 Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 9033)
 
 
+Started GET "/" for 127.0.0.1 at 2024-06-21 17:52:47 -0500
+Processing by ServersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering servers/index.html.erb within layouts/application
+  [1m[36mServer Load (0.4ms)[0m  [1m[34mSELECT "servers".* FROM "servers"[0m
+  ↳ app/views/servers/index.html.erb:5
+  Rendered servers/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 4469.0ms | Allocations: 35644)
+Completed 200 OK in 4496ms (Views: 4469.7ms | ActiveRecord: 8.0ms | Allocations: 48495)
+
+
